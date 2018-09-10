@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>新闻 - Mobike</title>
+    <link rel="short icon" href="images/apple-touch-icon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/news.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部导航栏-->
+<nav class="navbar navbar-default bigBox ">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <span class="icon-bar iconT"></span>
+                <span class="icon-bar iconB"></span>
+            </button>
+            <a class="" href="index.html">
+                <svg width="100" height="37" viewBox="0 0 100 37" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobike 摩拜单车</title>
+                    <g fill="#FFF" fill-rule="evenodd">
+                        <path d="M96.394 8.998l-10.633.184a.403.403 0 0 1-.384-.52c.708-2.505 2.96-4.364 5.647-4.41a5.828 5.828 0 0 1 1.8.248 5.992 5.992 0 0 1 3.947 3.965.41.41 0 0 1-.376.533m3.028 1.16a8.444 8.444 0 0 0-2.65-6.09 8.243 8.243 0 0 0-5.838-2.24c-2.77.066-5.307 1.497-6.88 3.96a8.182 8.182 0 0 0-1.108 2.75c-.935 4.59 1.786 8.692 5.723 9.89a8.13 8.13 0 0 0 2.517.35c3.326-.058 6.348-2.172 7.61-5.293a.202.202 0 0 0-.185-.277l-1.243-.006a1.954 1.954 0 0 0-1.57.77c-1.1 1.44-2.805 2.35-4.64 2.38a5.827 5.827 0 0 1-4.226-1.697 6.01 6.01 0 0 1-1.658-3.04l12.966-.224a1.212 1.212 0 0 0 1.18-1.23M17.836 8.102v8.333c0 .62.276 1.205.754 1.59l1.29 1.036c.128.104.318.01.318-.16V8.152c0-3.11-2.326-5.792-5.356-5.945-1.943-.1-3.682.82-4.765 2.28-.97-1.31-2.45-2.194-4.153-2.28C2.686 2.04 0 4.697 0 7.987V18.9c0 .17.19.264.318.16l1.29-1.037c.478-.384.754-.97.754-1.59v-8.33c0-1.79 1.314-3.353 3.054-3.472 1.91-.13 3.502 1.425 3.502 3.356v8.45c0 .62.28 1.206.754 1.59l1.29 1.037c.13.104.318.01.318-.16V8.153c0-.057-.006-.11-.008-.168h.008c0-1.93 1.592-3.486 3.502-3.354 1.74.12 3.054 1.685 3.054 3.474M64.564 19.04c.127.118.33.025.33-.15V3.03c0-.583-.25-1.14-.683-1.526L62.84.294c-.128-.117-.326-.022-.326.15V16.27c0 .575.24 1.125.66 1.51l1.39 1.26zm-33.392-2.38c-3.28 0-5.95-2.72-5.95-6.065 0-3.343 2.67-6.064 5.95-6.064 3.282 0 5.95 2.723 5.95 6.066 0 3.345-2.668 6.066-5.95 6.066m8.333-6.065c0-4.68-3.74-8.49-8.333-8.49-4.592 0-8.33 3.81-8.33 8.49 0 4.683 3.738 8.493 8.33 8.493 4.594 0 8.333-3.81 8.333-8.493M50.26 16.66c-3.278 0-5.943-2.712-5.95-6.05v-.03c.007-3.336 2.672-6.05 5.95-6.05 3.28 0 5.95 2.722 5.95 6.065 0 3.345-2.67 6.066-5.95 6.066m8.33-6.064c0-4.68-3.737-8.49-8.33-8.49-2.33 0-4.438.98-5.95 2.554V3.03c0-.583-.25-1.14-.683-1.526l-1.37-1.21a.196.196 0 0 0-.328.15v10.092l-.004.06s0 .037.002.057v.293h.005c.182 4.52 3.846 8.142 8.324 8.142 4.593 0 8.33-3.81 8.33-8.493m21.69 8.185H81.3c.167 0 .26-.194.157-.327L74.16 8.87l7.17-5.825c.148-.12.066-.36-.123-.36h-2.22a2.79 2.79 0 0 0-1.813.645L71.59 7.857V2.79c0-.584-.25-1.142-.685-1.526L69.535.05a.198.198 0 0 0-.328.154V16.27c0 .577.242 1.126.662 1.51l1.39 1.262c.125.116.33.023.33-.15v-7.934l.707-.575 5.82 7.626c.375.484 1.125.77 2.158.77m-20.313 8.986h-4.136v-1.74c0-.087.07-.156.157-.156h3.98v1.896zm0 2.94h-3.98a.157.157 0 0 1-.156-.157v-1.714h4.136v1.868zm1.075-1.87h4.15v1.713a.155.155 0 0 1-.154.154h-3.996v-1.868zm0-2.966h3.996c.086 0 .154.07.154.155v1.74h-4.15V25.87zm6.025 7.46h-6.025v-1.554h4.704a.52.52 0 0 0 .523-.52v-5.94a.52.52 0 0 0-.52-.516h-2.066l.498-.754c.073-.107.035-.22-.11-.22h-.886c-.105 0-.18.01-.23.084l-.59.89h-3.705l-.59-.89c-.05-.074-.123-.085-.228-.085h-.887c-.145 0-.183.114-.11.22l.5.755h-2.07a.52.52 0 0 0-.52.517v5.94c0 .287.234.52.52.52h4.69v1.554h-6.166c0 .593.48 1.073 1.077 1.073h5.09v2.147c0 .087.07.156.157.156h.762c.083 0 .154-.07.154-.157V34.4h6.025c.086 0 .155-.07.155-.158v-.757a.156.156 0 0 0-.156-.156zm20.946-.004H82.84v-2.012h3.994c.086 0 .157-.07.157-.155v-.79a.156.156 0 0 0-.155-.156H82.84v-2.428a.154.154 0 0 0-.155-.153h-.765a.155.155 0 0 0-.156.153v2.428H78.28a.05.05 0 0 1-.042-.078l2.25-3.425h7.026c.087 0 .157-.07.157-.155v-.76a.155.155 0 0 0-.155-.152h-6.322l1.055-1.598c.073-.108.036-.22-.11-.22h-.886c-.103 0-.178.01-.227.085l-1.15 1.734h-4.147c0 .59.48 1.068 1.076 1.068h2.37l-2.19 3.335a.818.818 0 0 0 .71 1.267h4.072v2.012h-6.53c0 .59.482 1.07 1.074 1.07h5.456v2.154c0 .087.072.156.156.156h.765c.085 0 .155-.07.155-.156v-2.154h5.168c.085 0 .156-.07.156-.156v-.758a.156.156 0 0 0-.156-.156M14.188 26.42c0 .592.48 1.07 1.075 1.07h.12l-1.102 1.18a.155.155 0 0 0 .01.22l.56.517a.16.16 0 0 0 .223-.01l1.013-1.104v1.42c0 .087.07.156.157.156h.76a.155.155 0 0 0 .157-.158v-1.39l1.01 1.075a.16.16 0 0 0 .223.01l.55-.517a.156.156 0 0 0 .007-.22l-1.103-1.18h1.05c.09 0 .158-.068.158-.155v-.76a.155.155 0 0 0-.157-.154h-1.74v-.64a.156.156 0 0 0-.156-.155h-.76a.155.155 0 0 0-.157.156v.64h-1.897zm5.33 0c0 .592.48 1.07 1.075 1.07h.12l-1.102 1.18a.155.155 0 0 0 .01.22l.56.517a.16.16 0 0 0 .223-.01l1.013-1.104v1.42c0 .087.07.156.158.156h.76a.155.155 0 0 0 .156-.158v-1.39L23.5 29.4c.058.063.16.068.22.01l.55-.517a.156.156 0 0 0 .01-.22l-1.105-1.18h1.05c.09 0 .158-.068.158-.155v-.76a.155.155 0 0 0-.157-.154h-1.74v-.64a.156.156 0 0 0-.155-.156h-.76a.155.155 0 0 0-.157.156v.64h-1.897zm5.068 7.4h-4.343v-.68h4a.16.16 0 0 0 .158-.158v-.76a.158.158 0 0 0-.155-.153h-4v-.687h2.82c.307 0 .61-.084.87-.246l.454-.282a.154.154 0 0 0 .05-.21l-.39-.643a.154.154 0 0 0-.216-.053l-.2.122c-.26.158-.556.242-.86.242H14.43c0 .59.48 1.07 1.073 1.07h3.665v.684h-4.74c0 .59.482 1.07 1.075 1.07h3.665v.68h-5.082c0 .592.48 1.073 1.075 1.073h4.008l-.007.55c0 .106-.09.193-.195.193H16.89c0 .59.48 1.07 1.074 1.07h1.553a.717.717 0 0 0 .72-.713l.007-1.1h4.343c.088 0 .157-.07.157-.155v-.76a.156.156 0 0 0-.157-.156"></path><path d="M24.603 24.37H19.31v-.598a.156.156 0 0 0-.157-.158h-.762a.157.157 0 0 0-.154.158v.598H13.23a.816.816 0 0 0-.818.814v7.737c0 .945-.23 1.873-.672 2.708l-.47.91c-.04.075.008.17.104.17h.824c.086 0 .194-.01.233-.092l.664-1.4c.258-.73.394-1.502.394-2.283v-7.335c0-.087.07-.157.156-.157h10.96c.086 0 .156-.07.156-.155v-.758a.156.156 0 0 0-.157-.156m13.697-.545a.16.16 0 0 0-.212-.058l-.705.41a1.483 1.483 0 0 1-.734.197h-3.753c0 .59.48 1.068 1.076 1.068h1.235v2.395h-2.312c0 .59.48 1.067 1.076 1.067h1.235v2.484h-2.312c0 .59.48 1.068 1.076 1.068h1.263v.465c0 .945-.23 1.873-.672 2.708l-.467.91c-.04.074.008.17.102.17h.824c.086 0 .194-.008.233-.092l.662-1.4a6.846 6.846 0 0 0 .394-2.283v-.476h2.185a.154.154 0 0 0 .156-.154v-.76a.155.155 0 0 0-.155-.154H36.31v-2.485h2.185a.154.154 0 0 0 .156-.154v-.76a.154.154 0 0 0-.155-.152H36.31v-2.394h.625c.254 0 .505-.067.724-.192l.96-.547a.155.155 0 0 0 .057-.212l-.38-.665zm7.573.545h-6.637c0 .59.48 1.067 1.076 1.067l1.777.002v1.737l-2.855.002c0 .59.48 1.066 1.076 1.066h1.778v1.74h-2.854c0 .592.48 1.07 1.076 1.07h1.777v1.74l-2.854.002c0 .59.48 1.067 1.076 1.067h1.776v2.682c0 .087.07.156.155.156h.764c.086 0 .157-.07.157-.157v-2.683h2.71c.09 0 .16-.07.16-.157v-.76a.156.156 0 0 0-.16-.154h-2.71v-1.74h2.71c.09 0 .16-.068.16-.155v-.757a.156.156 0 0 0-.16-.155h-2.71v-1.74h2.71c.09 0 .16-.07.16-.157v-.756a.156.156 0 0 0-.16-.156h-2.71v-1.74h2.71c.09 0 .16-.067.16-.155v-.757a.156.156 0 0 0-.16-.155"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="sutra.html">
+                                <p class="productT">经典版</p>
+                                <p>轻便，可靠</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="motorbike.html">
+                                <p class="productT">轻骑</p>
+                                <p>城市随处可骑行</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sectior.html">
+                                <p class="productT">智能锁</p>
+                                <p>摩拜智造，天生靠得住</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="technology.html">摩拜科技</a></li>
+                <li><a href="city.html">城市</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li class="mobike"><a href="#">立即开始使用 Mobike</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--main主体部分-->
+<div class="main">
+    <!--banner-->
+    <div class="bannerBox">
+        <div class="banner">
+            <div class="commonHead"></div>
+            <div class="container-md common">
+                <div>
+                    <h1>新闻</h1>
+                    <h2>Mobike 新闻</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tabs-->
+    <div class="page-content">
+        <div class="contentBg">
+            <section class="tabs">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">9 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">全新一代摩拜单车“轻新”亮相：重新设计每个零件 重量行业最低</a>
+                            </h2>
+                            <p class="RTime">2017 年 9 月 22 日，05:46</p>
+                            <p class="RContent">9月22日，全球智能共享单车首创者与领导者摩拜单车今天正式发布全新一代车型，采用极简主义设计语言，将车身重量降至全行业最低，大幅减轻用户骑行负担，并将推出自动变速版本车型，堪称最轻盈、最好骑的共享单车。 从初代经典款摩拜 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">8 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜携手联合国环境署等发起“世界骑行日”</a>
+                            </h2>
+                            <p class="RTime">2017 年 8 月 29 日，05:48</p>
+                            <p class="RContent">8月29日消息，摩拜单车今天携手首批联合发起机构——联合国环境署、世界资源研究所等全球性国际组织，以及新华社、新京报等国内权威媒体，共同发起“世界骑行日”，倡导“骑行改变城市”理念。摩拜单车倡议并发起，将每年的9月17日 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">7 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">“新四大发明”摩拜单车登陆意大利  开启全球第4个海外国家</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 25 日，12:51</p>
+                            <p class="RContent">2017年7月25日，全球智能共享单车首创者与领导者摩拜单车今天宣布进入意大利，首批进驻欧洲文艺复兴运动发祥地佛罗伦萨和引领国际时尚潮流的米兰两个城市。意大利也成为摩拜单车在欧洲大陆进驻的第一个国家，也是继新加坡、英国和 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">“摩拜单车发布行业首个《共享单车文明停放倡议书》</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 24 日，12:44</p>
+                            <p class="RContent">7月24日，全球智能共享单车首创者与领导者摩拜单车今天发布行业首个《共享单车文明停放倡议书》，呼吁全体共享单车企业加强管理、及时处置乱停乱放、车辆淤积等问题；并呼吁用户文明用车、文明停放，共同维护良好的交通秩序和市容市貌 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">联合国副秘书长点赞摩拜单车：“新四大发明”走向全球</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 21 日，05:57</p>
+                            <p class="RContent">7月21日，全球智能共享单车首创者与领导者摩拜单车与联合国人类住区规划署（简称“联合国人居署”）在成都签署战略合作备忘录，携手推进智能共享单车的全球化进程，促进绿色、低碳、可持续城市发展，为实现城市更美好的前景而努力。  […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">“摩拜单车”入选2016年度中国媒体十大新词语</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 18 日，02:41</p>
+                            <p class="RContent">7月18日，教育部召开发布会，介绍2016年中国语言文字事业发展状况。“摩拜单车”入选年度中国媒体十大新词语。 据悉，在年度汉语盘点活动中，“摩拜单车”与“两学一做、冻产、表情包、洪荒之力、阿尔法围棋、网络大电影、山寨社 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">从中国制造到中国创造 摩拜单车奏响大国品牌最强音</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 17 日，02:16</p>
+                            <p class="RContent">高铁、网购、移动支付、共享单车，外国人眼中的中国“新四大发明”，悄然改变着人们的生活方式，也刷新着世界对中国的创新。当中国首创的智能共享单车——摩拜单车在英国曼彻斯特落地运营时，获得英国以及欧洲人民的集体点赞和关注，不少 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车携手招商银行推联名信用卡 拓展“5公里生活圈”</a>
+                            </h2>
+                            <p class="RTime">2017 年 7 月 12 日，04:10</p>
+                            <p class="RContent">7月12日，全球智能共享单车首创者与领导者摩拜单车今天携手招商银行信用卡，正式推出招商银行摩拜单车联名信用卡，拓展“5公里生活圈”，并为用户送上免费骑行等多重福利。 据了解，这张联名信用卡无论在外观还是权益上都进行了精心 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">6 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车新一轮融资超6亿美元</a>
+                            </h2>
+                            <p class="RTime">2017 年 6 月 16 日，09:00</p>
+                            <p class="RContent">2017年6月16日，全球智能共享单车行业首创者和领导者摩拜单车宣布完成超过6亿美元新一轮融资，这一数字创下共享单车行业诞生以来的单笔融资最高纪录。摩拜单车本轮融资由腾讯领投，新引入的战略和财务投资者包括交银国际、工银国 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车登陆英国曼彻斯特 开启全球第100城</a>
+                            </h2>
+                            <p class="RTime">2017 年 6 月 13 日，12:49</p>
+                            <p class="RContent">6月13日，全球智能共享单车首创者和领导者摩拜单车今天宣布登陆全球第100城——英国第二大城市、欧洲工业革命发源地曼彻斯特，并同步进入毗邻曼市的索尔福德（Salford），引领共享单车行业扬帆出海取得新的重要进展。 曼彻 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车发布“宝箱车” 联手京东豪撒22亿元现金及优惠券</a>
+                            </h2>
+                            <p class="RTime">2017 年 6 月 12 日，03:00</p>
+                            <p class="RContent">2017年6月12日，全球智能共享单车首创者与领导者摩拜单车今天正式发布新版“宝箱车”，开启与各大品牌强强联手跨界营销的新玩法。摩拜“宝箱车”首发即联手国内领先电商平台京东商城开展“骑摩拜，有‘京’喜”活动，发放价值近2 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车接入苹果支付服务 将支持iPhone相机直接扫码解锁</a>
+                            </h2>
+                            <p class="RTime">2017 年 6 月 6 日，02:44</p>
+                            <p class="RContent">2017年6月6日，全球智能共享单车首创者和领导者摩拜单车今天宣布接入苹果支付服务Apple Pay，并将支持iPhone相机直接扫码解锁，进一步提升用户体验。 即日起，将摩拜单车App升级到最新的iOS 5.0版本，国 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">5 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车牵手微软公司 全球化发展增添新动能</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 31 日，02:59</p>
+                            <p class="RContent">2017年5月31日，北京市商务委员会主办的2017北京总部经济国际高峰论坛今天开幕，来自政府机构、企事业单位、国内外经济组织的超过150位官员、学者和企业界人士参会。本届论坛上，全球智能共享单车开创者与领导者摩拜单车与 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车牵手高通中移动 树立共享单车物联网平台新标杆</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 23 日，02:01</p>
+                            <p class="RContent">5月23日，全球智能共享单车首创者与领导者摩拜单车，与高通及中国移动研究院达成合作，共同启动中国首个LTE Cat M1/NB-1以及E_GPRS（eMTC/NB-IoT/GSM）多模外场测试，树立共享单车物联网平台新标 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车宣布“摩拜＋”战略 携手8大领军品牌打造“生活圈”开放平台</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 19 日，04:07</p>
+                            <p class="RContent">2017年5月19日，北京——全球智能共享单车首创者与领导者摩拜单车今天在北京举行发布会，正式宣布“摩拜+”开放平台战略，全面布局“生活圈”、“大数据”和“物联网”三大开放平台。中国联通、招商银行、中国银联、百度地图等顶 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜牵手四川移动华为 行业首家落地应用NB-IoT物联网技术</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 15 日，01:58</p>
+                            <p class="RContent">5月15日，全球智能共享单车首创者与领导者摩拜单车今天宣布与四川移动、华为达成战略合作，三方将在窄带物联网应用及NB-IoT创新等领域开展深度合作。这也标志着摩拜单车成为全球首家落地应用NB-IoT物联网技术的共享单车平 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车牵手中移动爱立信 率先响应“一带一路”建设号召</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 15 日，01:36</p>
+                            <p class="RContent">5月15日，全球智能共享单车首创者与领导者摩拜单车今天与中国移动、爱立信共同签署智慧出行“一带一路”合作备忘录，行业内率先响应国家“一带一路”政策号召，推动共享单车行业全球化合作和发展，为“中国创造”扬帆出海树立新榜样。 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车与陶氏化学战略合作 携手打造新一代共享单车</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 12 日，02:48</p>
+                            <p class="RContent">2017年5月12日，北京摩拜科技有限公司与陶氏化学（中国）投资有限公司签署战略合作伙伴关系谅解备忘录。双方将借助陶氏多元化的技术平台和世界领先的创新材料科技，以及摩拜在中国共享单车市场的领先地位，开展全方位合作，共同致 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车亮相上海国际自行车展 首次展示多款“技术验证单车”</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 6 日，01:31</p>
+                            <p class="RContent">2017年5月6日，全球智能共享单车首创者与领导者摩拜单车，亮相第二十七届上海国际自行车展览会开幕会场，在展现创新成就的同时，还首次展示了多款分别采用超轻量、碳纤维、钛合金、十八级変速等尖端科技的“技术验证单车”，成为本 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车与中再生战略合作 率先管理共享单车“全生命周期”</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 4 日，02:51</p>
+                            <p class="RContent">2017年5月4日，摩拜单车与中国再生资源开发有限公司（简称“中再生”）今天在上海签约结为战略合作伙伴关系，率先实现共享单车“全生命周期管理”，共建生态文明、共享绿色未来。摩拜单车联合创始人兼CEO王晓峰与中再生公司董事 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">共青团中央表彰摩拜单车创始人胡玮炜等20位“创新创业好青年”</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 4 日，12:29</p>
+                            <p class="RContent">5 月 4 日消息，五四青年节来临之际，共青团中央日前下发文件，表彰摩拜单车创始人兼总裁胡玮炜等 20 位“创新创业好青年”。胡玮炜等人同时还被评为 2017 年“全国向上向善好青年”。 共青团中央在中青发 【2017】 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车与中再生战略合作 率先管理共享单车“全生命周期”</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 4 日，12:24</p>
+                            <p class="RContent">（摩拜单车联合创始人兼CEO王晓峰与中再生公司董事长管爱国出席签约仪式） 2017 年 5 月 4 日，摩拜单车与中国再生资源开发有限公司（简称 “中再生” ）今天在上海签约结为战略合作伙伴关系，率先实现共享单车“全生命 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车与汉能达成战略合作 共同拓展移动能源领域</a>
+                            </h2>
+                            <p class="RTime">2017 年 5 月 2 日，02:54</p>
+                            <p class="RContent">2017年5月2日，摩拜单车与汉能控股集团旗下汉能移动能源控股有限公司（以下简称“汉能”）在北京汉能总部签署战略合作协议，双方宣布将 在移动能源领域进行全方位深度合作，包括共同组建联合实验室，研究移动能源与能源互联网解决 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">4 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车全面接入微信30天：月活跃用户量环比增速超200%</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 28 日，11:59</p>
+                            <p class="RContent">4 月 28 日，全球智能共享单车首创者与领先者——摩拜单车今天 “晒出” 一份靓丽成绩单：自从 3 月 29 日全面接入微信以来，摩拜单车 4 月份活跃用户量环比增速超过 200% ，短短一个月新增 2,400 万注册 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车日订单量稳超2000万 全国投放新款单车昵称“风轻扬”</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 22 日，11:51</p>
+                            <p class="RContent">4 月 22 日，全球智能共享单车开创者与领导者摩拜单车在北京召开 “骑行让城市更美好” 发布会。在数百位政府领导、专家学者、行业人士、媒体记者的见证下，摩拜单车全方位展示了在城市中运营一年以来的靓丽成绩，并正式推出更轻 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车智能推荐停车点  树立行业最高标杆</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 19 日，01:24</p>
+                            <p class="RContent">2017年4月19日，全球智能共享单车开创者与领导者摩拜单车宣布，摩拜智能推荐停车点在全国多个城市落地。这是继日订单量突破2000万个，摩拜单车再次树立智能共享单车行业的最高标杆。目前，智能推荐停车点在北京、等城市已经相 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">新款摩拜单车入驻全国50城 比上一代车型省力30%</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 18 日，06:39</p>
+                            <p class="RContent">4 月 18 日，智能共享单车行业领导者摩拜单车今天宣布，更加轻便、好骑的新款摩拜单车已经全面入驻北上广深等全国 50 大城市，推动共享单车骑行体验迈上新台阶。 据了解，新款车型的最大特点是 “轻便、好骑” 。它采用了新 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车日订单量超 2000 万 成为全球第一大互联网出行服务</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 14 日，05:48</p>
+                            <p class="RContent">2017 年 4 月 14 日，全球智能共享单车开创者与领导者摩拜单车今天宣布，日订单量已超过 2,000 万，成为全球第一大互联网出行服务。 摩拜单车人工智能大数据平台“魔方”显示，北京时间 4 月 13 日晚上 23 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车打造 Wagas 主题餐厅 新车 “轻骑行” 助力 “轻生活”</a>
+                            </h2>
+                            <p class="RTime">2017 年 4 月 8 日，07:06</p>
+                            <p class="RContent">近日，摩拜单车携手全球知名健康餐饮品牌 Wagas 打造的“摩拜单车主题餐厅”在北京、上海等城市惊艳亮相，共同传递“‘摩’力轻生活，‘骑’食很简单”的轻生活时尚态度，这场跨界合作迅速成为各界焦点。 走进摩拜单车 Waga […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">3 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车入驻微信九宫格 再获腾讯核心资源强力助推</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 29 日，06:08</p>
+                            <p class="RContent">2017 年 3 月 29 日，全球第一大智能共享单车平台摩拜单车与腾讯联合宣布，双方战略合作再度升级，摩拜单车将全方位接入全球第一大移动社交网络服务微信。 双方宣布，摩拜单车将出现在 “微信钱包” 页面的第三方服务 “ […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">骑摩拜能赚钱！“摩拜红包车”助推精细化运营</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 23 日，06:04</p>
+                            <p class="RContent">今天（ 2017 年 3 月 23 日），全球首个智能共享单车平台摩拜单车在北京举办“夺宝‘骑’兵”发布会，宣布“摩拜红包车”将在全国上线。用户打开摩拜单车 APP ，除了可以看到周围可供使用的摩拜单车外，还有可能发现红 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车新加坡正式运营，开启海外扩展新篇章</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 21 日，05:43</p>
+                            <p class="RContent">3 月 21 日消息，全球首创智能共享单车模式的摩拜单车宣布，在经历了前期的深度调研、悉心筹备和试运营后，正式在新加坡投入运营。 新加坡市民只需下载 Mobike App （摩拜手机客户端），就能随时查看所在地附近可供使 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车闪耀美国 SXSW 科技展：既是网红，更是“街红”</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 20 日，06:53</p>
+                            <p class="RContent">全球最大的科技、娱乐和创新盛会之一“西南偏南” (SXSW) 于 2017 年 3 月 10-19 日在美国德克萨斯州奥斯汀市再次拉开帷幕。每年这里都汇集了十几万来自世界各地的科技、音乐、电影领域最前沿、最潮流的创新者。 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">央视《焦点访谈》聚焦摩拜单车：解决短途出行难题一炮而红</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 5 日，09:00</p>
+                            <p class="RContent">3 月 5 日消息，央视 《焦点访谈》 节目昨晚报道，以摩拜单车为代表的共享单车解决了城市短途出行的难题，投入市场后一炮而红。这种新业态、新产业不仅改变了人们的衣食住行，也让中国成为创业热土。 以下为 《焦点访谈》 图文 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">两会即将开幕 全国政协委员刘春骑摩拜单车报到</a>
+                            </h2>
+                            <p class="RTime">2017 年 3 月 2 日，07:02</p>
+                            <p class="RContent">据新京报报道，全国政协十二届五次会议将在北京开幕，全国政协委员已经陆续到驻地报到。3 月 2 日上午，全国政协委员、中南影业 CEO 刘春骑着共享单车到驻地报到。 今天上午，新京报记者陪同刘春骑摩拜单车到驻地报到。刘春说 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">2 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">共享经济思维引领 摩拜单车与招商银行达成战略合作</a>
+                            </h2>
+                            <p class="RTime">2017 年 2 月 28 日，05:56</p>
+                            <p class="RContent">2 月 28 日，摩拜单车、招商银行联合宣布双方达成战略合作，未来双方将在押金监管、支付结算、金融、服务和市场营销等方面展开全方位合作。这是共享经济思维在双方战略发展意图上的深刻体现。摩拜单车联合创始人兼 CEO 王晓峰 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜率先接入微信新能力，微信扫码即可骑走摩拜单车</a>
+                            </h2>
+                            <p class="RTime">2017 年 2 月 23 日，06:35</p>
+                            <p class="RContent">2017 年 2 月 23 日，全球最大的智能共享单车平台摩拜单车与腾讯微信联合宣布，今后用户通过微信 “扫一扫” 扫描摩拜单车车身上的二维码，将可以直接进入摩拜单车微信小程序、扫码开锁即可轻松开启摩拜之旅。 这项技术是 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车再获资本青睐－－淡马锡入场注资，高瓴再度增持</a>
+                            </h2>
+                            <p class="RTime">2017 年 2 月 20 日，08:52</p>
+                            <p class="RContent">2017 年 2 月 20 日，全球最大的智能共享单车平台摩拜单车今天宣布再次获得 D 轮后新融资，新引入新加坡投资公司淡马锡 (Temasek) 的股权投资，同时，此前领投摩拜 C 轮的高瓴资本再次追加投资。自今年 1 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" style="padding-top: 30px">
+                <div class="title container-md">
+                    <div class="textLeft">
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">北京春节骑行大数据：摩拜带你烧头香、逛簋街！</a>
+                            </h2>
+                            <p class="RTime">2017 年 2 月 7 日，05:29</p>
+                            <p class="RContent">鸡年春节，喜气洋洋的北京城又有哪些新变化？除了道路更畅通、空气更清新外，以摩拜单车为代表的智能共享单车刮起“橙色旋风”，改变了京城百姓的出行习惯。 2月7日，智能共享单车平台摩拜单车发布全国首份《春节骑行大数据报告》。报 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs tabsBody">
+                <div class="title container-md">
+                    <div class="textLeft">
+                        <div class="date">
+                            <div class="year">
+                                2017 <span class="yearS">年</span>
+                            </div>
+                            <div class="month">1 月</div>
+                        </div>
+                    </div>
+                    <div class="textRight">
+                        <div>
+                            <h2 class="Rtitle">
+                                <a href="#">摩拜单车获富士康战略投资，并达成独家生产合作</a>
+                            </h2>
+                            <p class="RTime">2017 年 1 月 23 日，05:36</p>
+                            <p class="RContent">——新增五百余万产能，摩拜总产能超千万   1月23日，全球最大的智能共享单车平台摩拜单车今天宣布与全球第一大科技制造服务企业富士康达成行业独家战略合作，独享五百万量级产能。双方将在单车设计生产、全球供应链整合 […]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--微信小程序-->
+<div class="weixin">
+    <div class="container-md">
+        <div class="maxBox">
+            <div class="meta-link">
+                <div class="icon pull-left" style="background-image: url('images/icon-wechat.png')"></div>
+                <div class="content pull-left">
+                    <h4>微信小程序</h4>
+                    <p>微信扫一扫，直接用车</p>
+                </div>
+            </div>
+            <div class="meta-link link2">
+                <div class="icon pull-left" style="background-image: url('images/icon-rp.png')"></div>
+                <div class="content pull-left">
+                    <h4>红包车</h4>
+                    <p>骑摩拜，能赚钱</p>
+                </div>
+            </div>
+            <div class="meta-link link3">
+                <div class="icon pull-left" style="background-image: url('images/icon-credit.png')"></div>
+                <div class="content pull-left">
+                    <h4>信用分</h4>
+                    <p>文明骑行，信用生活</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="footerT">
+        <div class="container-md">
+            <div class="foot">
+                <ul class="company">
+                    <li>
+                        <a href="#" style="background-image: url('images/logo-text.svg')"></a>
+                    </li>
+                    <li>Mobike Technology Co, Ltd</li>
+                    <li>客服电话 <span>400-811-7799</span></li>
+                    <li>北京摩拜科技有限公司</li>
+                </ul>
+                <div class="links">
+                    <div class="products">
+                        <h3>产品</h3>
+                        <ul>
+                            <li>
+                                <a href="#">经典版</a>
+                            </li>
+                            <li>
+                                <a href="#">轻骑</a>
+                            </li>
+                            <li>
+                                <a href="#">智能锁</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="life">
+                        <h3>生活</h3>
+                        <ul>
+                            <li>
+                                <a href="#">城市</a>
+                            </li>
+                            <li>
+                                <a href="#">新闻资讯</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h3>关于</h3>
+                        <ul>
+                            <li>
+                                <a href="#">关于Mobike</a>
+                            </li>
+                            <li>
+                                <a href="#">加入我们</a>
+                            </li>
+                            <li>
+                                <a href="#">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="net">
+                        <h3>社交网络</h3>
+                        <ul>
+                            <li>
+                                <a href="#">微博</a>
+                            </li>
+                            <li>
+                                <a href="#">微信</a>
+                            </li>
+                            <li>
+                                <a href="#">知乎专栏</a>
+                            </li>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerB">
+        <div class="container-md Boot">
+            <div class="Bleft">
+                <p>京 ICP 备15053449 号 <i style="background-image:url('images/beian-icon.png') "></i> 京公网安备 11010502032956 号</p>
+                <p>增值电信业务经营许可证编号：京B2-20170053</p>
+            </div>
+            <div class="Bright">
+                <a href="#"><img src="images/longtou.jpg" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+/*导航栏*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+}
+.navbar{
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1110;
+    margin-bottom: 0px;
+    /*height: 80px;*/
+    border:none;
+}
+.navbar-default{
+  /*background-color: rgba(255,255,255,0.1);*/
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+.navbar-default .navbar-collapse{
+    border: none;
+}
+.container .navbar-header{
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    height: 80px;
+}
+nav.blue{
+    background-color: rgba(226,61,14,0.9);
+    /*transition: background 2s ease;*/
+}
+.navbar-default .container .navbar-toggle{
+    border: none;
+}
+.navbar-default .container .navbar-toggle:hover{
+    background: none;
+}
+.navbar-default .container .navbar-toggle .iconT{
+    margin-bottom: 10px;
+}
+.navbar-default .container .navbar-toggle span{
+    background-color: #fff;
+}
+.iocnTop{
+    transform: rotate(-45deg) translateY(7px);
+}
+.iconBottom{
+    transform: rotate(45deg) translateY(-8px);
+}
+.container .navbar-header a{
+    padding: .35714286em 20px;
+    margin-top: 10px;
+    display: block;
+}
+/*dropdown*/
+.navbar-default>.container>.navbar-collapse>.nav>.dropdown>a{
+    color: #fff;
+    background-color: transparent;
+}
+.dropdown .dropdown-menu{
+    min-width: 240px;
+    padding: 15px 0 0;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+}
+.dropdown .dropdown-menu>li>a{
+    display: block;
+    padding: 8px 20px;
+    background-color: #fff;
+}
+.dropdown .dropdown-menu>li>a p:first-child{
+    font-size: 20px;
+    color: #000;
+}
+.dropdown .dropdown-menu>li>a p:last-child{
+    opacity: .5;
+}
+.dropdown .dropdown-menu>li:first-child>a{
+    border-radius: 4px 4px 0 0;
+}
+.dropdown .dropdown-menu>li:last-child>a{
+    padding-bottom: 15px;
+    border-top:none;
+    border-radius:0 0 4px 4px ;
+}
+.dropdown-menu>li>a:hover p:first-child{
+    color: #e23d0e;
+}
+.mobike{
+    opacity: 0;
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        float: right;
+    }
+    .subnav{
+        position: relative;
+        display: block;
+        overflow: auto;
+        transition: max-height .6s ease-out;
+        opacity: 1;
+    }
+    .navbar-default>.container>.navbar-collapse>.nav>.dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+.navbar-collapse .navbar-nav{
+    margin-top:15px;
+}
+/*字体*/
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-size: 1.2em;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
+    background: none;
+}
+@media (max-width: 768px) {
+    .navbar-nav li a{
+        border-top: 1px solid rgba(0,0,0,0.1);
+        padding: 1em 20px;
+    }
+    .dropdown-menu>li{
+        background-color: #fff;
+    }
+    .navbar-default .navbar-nav>li:first-child>a{
+        border-top: rgba(0,0,0,0.1);
+    }
+    .mobike{
+        opacity: 1;
+    }
+}
+@media (max-width: 1080px) {
+    .titleText{
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/*main-banner*/
+.main .bannerBox{
+    /*background: #e23d0e;*/
+    color: #fff;
+}
+.main .bannerBox .banner{
+    background: url("../images/header-cities.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 80px;
+}
+.banner .commonHead{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(226,61,14,.85);
+}
+.banner .common{
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    justify-content: center;
+    text-align: center;
+}
+.banner .common h1{
+    font-size: 400%;
+    margin-top: -40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.banner .common h2{
+    margin: 0;
+    font-size: 2.2em;
+    line-height: 1.8;
+    font-weight: 300;
+}
+.container-md{
+    max-width:1080px;
+    position: relative;
+    margin: 0 auto;
+    padding:0 20px;
+}
+.page-content .contentBg{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #f0f2f5;
+}
+.page-content .contentBg .tabs{
+    background-color: #fff;
+    box-shadow: 0 12px 25px 0 rgba(39,50,78,.3);
+    margin-top: -60px;
+    align-items: center;
+    line-height: 1.7;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 5px;
+}
+.tabs .title ul{
+    display: flex;
+    margin-bottom: 0;
+}
+.tabs .title ul li{
+    text-align: center;
+    flex: auto;
+}
+.tabs .title ul li a{
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #000;
+    text-decoration: none;
+}
+.tabs .title ul li.active a{
+    background-color: #fff;
+}
+.titleText{
+    max-width: 800px;
+    margin: 40px auto;
+}
+.titleText h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #e0503d;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    margin-top: 0;
+}
+.titleText p{
+    font-size: 1.35em;
+    color: #3e3e3e;
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+.titleText dl dt{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.35em;
+    line-height: 1.7;
+    color: #000;
+}
+.titleText dl dd{
+    color: #000;
+    line-height: 1.7;
+    font-size: 1.35em;
+}
+@media (min-width: 641px) {
+    .tabs{
+        display: flex;
+    }
+    .title{
+        flex: 1;
+        width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .tabs .title ul{
+        display: block;
+    }
+    .tabs .title ul li{
+        text-align: left;
+    }
+}
+/*大国品牌*/
+.promos{
+    /*height: 260px;*/
+}
+.promos a{
+    display: inline-block;
+    min-width:25%;
+    min-height: 260px;
+    background-size: cover;
+    padding: 2.4vw;
+    /*border: 1px solid #fff;*/
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    /*vertical-align: middle;*/
+}
+@media (max-width: 1080px) {
+    .promos a{
+        width: 50%;
+        height: 260px;
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .promos a{
+        width: 100%;
+        height: 260px;
+        display: block;
+    }
+}
+/*微信小程序*/
+.weixin{
+    border-top:1px solid #eee ;
+    border-bottom: 1px solid #eee;
+}
+.maxBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.maxBox>div{
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1080px) {
+    .maxBox>div {
+        flex: 1;
+    }
+}
+@media (min-width: 1080px) {
+    .maxBox>div {
+        flex: 1;
+    }
+}
+@media (max-width: 600px) {
+    .maxBox>div {
+        padding: 20px 0;
+        min-width: 50%;
+    }
+    .maxBox div.meta-link:last-child{
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 450px) {
+    .maxBox>div:first-child{
+        min-width: 100%;
+    }
+    .maxBox>div {
+        padding: 20px 0;
+        min-width: 50%;
+    }
+    .maxBox div.meta-link.link2{
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 400px) {
+    .maxBox>div{
+        min-width: 100%;
+    }
+}
+.maxBox .meta-link:first-child{
+    justify-content: flex-start;
+}
+.maxBox .meta-link:last-child{
+    justify-content: flex-end;
+}
+.content{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content h4{
+    margin: 0;
+}
+.content p{
+    margin-bottom: 0;
+}
+.maxBox .meta-link .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+/*footer*/
+.footerT{
+    border-bottom: 1px solid #eee;
+}
+.foot{
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+}
+.foot .company{
+    margin-right: 40px;
+    flex-grow: 2;
+}
+.foot .company li{
+    line-height: 1.7;
+    font-size: 16px;
+    color: #000;
+}
+.foot .company li a{
+    display: block;
+    width: 160px;
+    height: 61px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.foot .links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.foot .links div{
+    margin-left: 8vw;
+    flex-grow: 1;
+}
+.foot .links div:first-child{
+    margin-left: 0;
+}
+.foot .links div h3{
+    margin-top: 0px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.foot .links div ul li{
+    line-height: 2;
+}
+.foot .links div ul li a{
+    font-size: 14px;
+    color: #000;
+}
+.foot .links>div{
+    flex-basis: 50%;
+}
+@media (min-width: 641px) {
+    .foot .company{
+        margin-bottom: 40px;
+    }
+    .foot .links>div{
+        flex-basis: auto;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 640px) {
+    .foot .company{
+        margin-bottom: 40px;
+    }
+    .foot .links>div{
+        flex-basis: 35%;
+        margin-left: 0;
+    }
+}
+/*footerB*/
+.footerB{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.Boot{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerB .Bleft{
+    margin-right: 40px;
+    flex-grow: 2;
+}
+.footerB .Bleft p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #aaa;
+}
+.footerB .Bleft p i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Bright{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Bright a img{
+    width: 100px;
+}
+@media (min-width: 641px) {
+    .Bright{
+        flex-grow: 0;
+    }
+}
+@media (max-width: 640px) {
+    .Bleft{
+        margin-bottom: 40px;
+    }
+}
